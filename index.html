@@ -14,10 +14,11 @@
 <body>
     <div id="app">
         <div class="container text-center mt-5">
+            <h1>Email list:</h1>
             <div v-if="mails.length >= 10" class="d-flex flex-column align-items-center">
-                <span v-for="(mail, index) in mails" :key="mails" class="mt-3 border-danger border fs-3 w-50">{{mail}}</span>
+                <span v-for="(mail, index) in mails" :key="mails" class="mt-3 fs-3 w-50">{{mail}}</span>
             </div>
-            <button @click="callMail" class="mt-3 btn btn-success">genera email</button>
+            <button @click="callMail" class="mt-3 btn btn-success bg_botton">genera email</button>
         </div>
 
     </div>
